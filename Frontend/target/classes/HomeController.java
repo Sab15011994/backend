@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping
 		{
 			System.out.println("Homecontroller bean is created");
 		}
-		@RequestMapping(value="/home")
+		@RequestMapping(value="/")
 		public String getHomePage()
 		{
-			return "home"
+			return "home";
 		}
 	}
 

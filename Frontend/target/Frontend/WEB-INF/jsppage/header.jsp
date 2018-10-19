@@ -16,7 +16,7 @@
 <script
 	src="<c:url value='/resource/js/bootstrap.js'></c:url>"></script>
 	<link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
-<title>Insert title here</title>
+<title></title>
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
