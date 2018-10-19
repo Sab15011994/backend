@@ -1,0 +1,14 @@
+body{
+	background-size:100%;
+	background-image:url("http://localhost:8080/Project1/images/background.jpg");
+	
+}
+.footer
+{
+	width:100%;
+	height:10%;
+	background-color:#e6e9ef;
+	text-align:center;
+	font-size:25px;
+	font-family:Racing Sans One;
+}
