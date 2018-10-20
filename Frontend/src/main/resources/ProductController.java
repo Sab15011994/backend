@@ -1,4 +1,4 @@
-package com.niit.Controller;
+package com.niit.controller;
 
 import org.springframework.ui.Model;
 
