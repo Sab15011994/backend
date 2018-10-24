@@ -14,7 +14,8 @@ import com.niit.models.Product;
 @Transactional
 public class ProductDaoImpl implements ProductDao
 {
-@Autowired
+    
+	//@Autowired
 	private SessionFactory sessionFactory;
 	public ProductDaoImpl()
 	{

@@ -34,7 +34,7 @@ public class DBConfiguration {
 		
 	}
 	@Autowired
-	@Bean
+	@Bean (name="sessionFactory")
 	public SessionFactory getSessionFactory()
 	{
 	 System.out.println("Entering session Factory");
