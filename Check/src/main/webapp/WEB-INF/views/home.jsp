@@ -8,8 +8,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/Background.css">
-
+ <link rel="stylesheet" type="text/css" href="<c:url value='/resource/css/navbar.css'></c:url>">
+ <link rel="stylesheet" type="text/css" href="<c:url value='/resource/css/footer.css'></c:url>">
 <title>My Home Page</title>
 </head>
 <body>
@@ -21,10 +21,12 @@
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
                 <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img  class="img-thumbnail" src="images/BMW.jpg" alt="first slide" height="100%" width="100%">
+                    <img  class="img-thumbnail" src="<c:url value='/resource/images/Acer.jpg'></c:url>" alt="first slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>WELCOME TO THE CAR STORE</h1>
@@ -33,7 +35,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img class="img-bordered" src="images/Minicooper.jpg" alt="Second slide" height="100%" width="100%">
+                    <img class="img-bordered" src="/resource/images/Asus.jpg" alt="Second slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>The Car Store.</h1>
@@ -42,7 +44,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img class="img-bordered" src="images/Lamborgini.jpg" alt="Third slide" height="100%" width="100%">
+                    <img class="img-bordered" src="/resource/images/Dell.jpg" alt="Third slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>The Car You Love</h1>
@@ -51,7 +53,25 @@
                     </div>
                 </div>
                  <div class="item">
-                    <img class="img-bordered" src="images/Nissan.jpg" alt="forth slide" height="100%" width="100%">
+                    <img class="img-bordered" src="/resource/images/Gaming_Laptop.jpg" alt="forth slide" height="100%" width="100%">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Any car can be a "cool" car</h1>
+                            <p>your life,your car...you own it!!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-bordered" src="/resource/images/Hp_Laptop.jpg" alt="forth slide" height="100%" width="100%">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Any car can be a "cool" car</h1>
+                            <p>your life,your car...you own it!!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-bordered" src="/resource/images/Lenovo.jpg" alt="forth slide" height="100%" width="100%">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Any car can be a "cool" car</h1>

@@ -12,7 +12,7 @@ public  PageController()
 
 
 	@RequestMapping("/")
-	public String home() {
+	public String getHomePage() {
 	
 		return "home";
 	

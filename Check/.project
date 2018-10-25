@@ -3,6 +3,7 @@
 	<name>Check</name>
 	<comment></comment>
 	<projects>
+		<project>Backend</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
