@@ -14,30 +14,26 @@
 <form:form action="${url}" method="post" modelAttribute="product">
 	<table>
 	<tr>
+	<td></td>
+	<td><form:hidden  path="id"></form:hidden></td>
+	</tr>
+	<tr>
 	<td>Enter Product Name</td>
-	<td><form:input  path="productname"/>
-	<form:errors path="productname" cssStyle="color:red"></form:errors>
-	</td>
+	<td><form:input  path="productname"/></td>
 	</tr>
 	<tr>
 	<td>Enter Product Description</td>
-	<td><form:textarea path="productdesc"/>
-	<form:errors path="productdesc" cssStyle="color:red"></form:errors>
-	</td>
+	<td><form:textarea path="productdesc"/></td>
 	</tr>
 	<tr><td>Enter Product Price</td>
-	<td><form:input path="price"/>
-	<form:errors path="price" cssStyle="color:red"></form:errors>
-	</td>
+	<td><form:input path="price"/></td>
 	</tr>
 	<tr>
 	<td>Enter Product Quantity</td>
-	<td><form:input path="quantity"/>
-	<form:errors path="quantity" cssStyle="color:red"></form:errors>
-	</td>
+	<td><form:input path="quantity"/></td>
 	</tr>
 	<tr><td>
-	<input type="submit" value="Add Product"></td>
+	<input type="submit" value="Edit Product"></td>
 	<td></td>
 	</tr>	
 	</table>
