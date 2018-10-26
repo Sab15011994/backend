@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container">
-<c:url value='/admin/addproduct' var="url"></c:url>
+<c:url value='/admin/updateproduct' var="url"></c:url>
 <form:form action="${url}" method="post" modelAttribute="product">
 	<table>
 	<tr>
