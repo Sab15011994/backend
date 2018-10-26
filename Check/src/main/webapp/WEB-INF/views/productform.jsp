@@ -36,10 +36,22 @@
 	<form:errors path="quantity" cssStyle="color:red"></form:errors>
 	</td>
 	</tr>
+	
+	<tr>
+	<td>Select Category</td>
+	<td><form:select path="category.id">
+	<form:option value="1">Furniture</form:option>
+	<form:option value="2">Educational Books</form:option>
+	<form:option value="3">Electronic Items</form:option>
+	<form:option value="4">Clothes</form:option>
+	<form:option value="5">Others</form:option>
+	</form:select></td>
+	</tr>
 	<tr><td>
 	<input type="submit" value="Add Product"></td>
 	<td></td>
-	</tr>	
+	</tr>
+		
 	</table>
 </form:form>
 </div>

@@ -23,18 +23,18 @@ public class App
        ApplicationContext context = new AnnotationConfigApplicationContext(DBConfiguration.class,ProductDaoImpl.class,ProductServiceImpl.class);
        ProductService productService = (ProductService) context.getBean("productServiceImpl");
        Product product = new Product();
-       List<Product> products= productService.getAllProducts();
-//       product.setId(3);
-//       product.setProductname("Car");
-//       product.setProductDesc("Lamborgini Car");
-//       product.setPrice(400000);
-//       product.setQuantity(2);
-//       productService.addProduct(product);
+    //   List<Product> products= productService.getAllProducts();
+       product.setId(1);
+       product.setProductname("LAPTOP");
+       product.setProductDesc("ASUS");
+       product.setPrice(40000);
+       product.setQuantity(10);
+     //  productService.addProduct(product);
 //	     productService.deleteProduct(5);
-//      productService.updateProduct(product);
+     productService.updateProduct(product);
 //      Product p= productService.getProduct(1);
-       for(Product p:products) {
-     System.out.println(p.getId()+" "+p.getProductname()+" "+p.getProductDesc()+" "+p.getQuantity()+" "+p.getPrice());
-    }
+//       for(Product p:products) {
+//     System.out.println(p.getId()+" "+p.getProductname()+" "+p.getProductDesc()+" "+p.getQuantity()+" "+p.getPrice());
+//    }
     }
 }

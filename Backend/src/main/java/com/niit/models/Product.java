@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 
@@ -19,6 +20,8 @@ public class Product
   private int quantity;
   @Min(value=1,message="Minimum Quantity must be 1")
    private double price;
+  @ManyToOne
+  private Category category;
 public int getId() {
 	return id;
 }
@@ -27,6 +30,12 @@ public void setId(int id) {
 }
 public String getProductname() {
 	return productname;
+}
+public Category getCategory() {
+	return category;
+}
+public void setCategory(Category category) {
+	this.category = category;
 }
 public void setProductname(String productname) {
 	this.productname = productname;
