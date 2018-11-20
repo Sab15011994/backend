@@ -29,7 +29,7 @@ public class ProductController {
 
 	@RequestMapping(value = "/all/getallproducts")
 	public String getAllProducts(Model model) {
-		List products = (List) productService.getAllProducts();
+		List <Product> products =  productService.getAllProducts();
 		model.addAttribute("products", products);
 		return "listofproducts";
 	}

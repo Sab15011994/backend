@@ -54,6 +54,7 @@ public class ProductDaoImpl implements ProductDao
 		Session session = sessionFactory.openSession();
 		Query query =session.createQuery("from Product");
 		List<Product>products=query.list();
+		session.flush();
 		return products;
 	}
 	

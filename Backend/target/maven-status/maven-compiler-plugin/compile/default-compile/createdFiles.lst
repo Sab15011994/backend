@@ -1,3 +1,4 @@
+com\niit\models\Category.class
 com\niit\configuration\DBConfiguration.class
 com\niit\Backend\App.class
 com\niit\models\Product.class
