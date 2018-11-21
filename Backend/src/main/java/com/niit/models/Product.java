@@ -15,37 +15,42 @@ public class Product
 	@GeneratedValue(strategy=GenerationType.AUTO)
    private int id;
    @NotEmpty(message="Productname is mandatory") private String productname;
-   @NotEmpty(message="Productname is required") private String productDesc;
-  @Min(value=0,message="Minimum Quantity must be 0") 
-  private int quantity;
-  @Min(value=1,message="Minimum Quantity must be 1")
-   private double price;
+   @NotEmpty(message="ProductDesc is required") private String productdesc;
+  @Min(value=0,message="Minimum Quantity must be 1") private int quantity;
+  @Min(value=1,message="Minimum Price must be 1") private double price;
+  
   @ManyToOne
   private Category category;
 public int getId() {
 	return id;
 }
+
+public Category getCategory() {
+	return category;
+}
+
+public void setCategory(Category category) {
+	this.category = category;
+}
+
 public void setId(int id) {
 	this.id = id;
 }
 public String getProductname() {
 	return productname;
 }
-public Category getCategory() {
-	return category;
-}
-public void setCategory(Category category) {
-	this.category = category;
-}
 public void setProductname(String productname) {
 	this.productname = productname;
 }
-public String getProductDesc() {
-	return productDesc;
+
+public String getProductdesc() {
+	return productdesc;
 }
-public void setProductDesc(String productDesc) {
-	this.productDesc = productDesc;
+
+public void setProductdesc(String productdesc) {
+	this.productdesc = productdesc;
 }
+
 public int getQuantity() {
 	return quantity;
 }

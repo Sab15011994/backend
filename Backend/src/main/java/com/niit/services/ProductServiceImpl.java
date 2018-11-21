@@ -1,18 +1,22 @@
 package com.niit.services;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+//import org.springframework.stereotype.Service;
 
 import com.niit.dao.ProductDao;
+import com.niit.models.Category;
 import com.niit.models.Product;
-@Repository
 
+@Repository
+//@Transactional
 public  class ProductServiceImpl implements ProductService{
+	
 	@Autowired
 	private ProductDao productDao;
+	
 	public  ProductServiceImpl()
 	{
 		System.out.println("Product ServiceImpl bean is created");
@@ -46,6 +50,12 @@ public  class ProductServiceImpl implements ProductService{
 	public List<Product> getAllProducts() {
 		
 		return  productDao.getAllProducts(); 
+	}
+
+	@Override
+	public List<Category> getAllCategories() {
+		
+		return productDao.getAllCategories();
 	}
 
 	

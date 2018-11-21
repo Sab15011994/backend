@@ -8,16 +8,15 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-
-
 @Entity
-public class Category {
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	private int id;
-	private String categoryname;
-	@OneToMany(mappedBy="category")
-	List <Product> products;
+public class Category 
+{
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private int id;
+    private String categoryname;
+    @OneToMany(mappedBy="category")
+    private List<Product> products;
 	public int getId() {
 		return id;
 	}
@@ -30,5 +29,5 @@ public class Category {
 	public void setCategoryname(String categoryname) {
 		this.categoryname = categoryname;
 	}
-	
+    
 }

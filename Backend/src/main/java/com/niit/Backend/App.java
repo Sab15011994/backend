@@ -25,17 +25,17 @@ public class App
        Product product = new Product();
       // List<Product> products= productService.getAllProducts();
    //  product.setId(1);
-     product.setProductname("L.G");
-     product.setProductDesc("SPEAKERS");
-     product.setPrice(4000);
-     product.setQuantity(10);
-     productService.addProduct(product);
-//	     productService.deleteProduct(5);
-//   productService.updateProduct(product);
-//    Product p= productService.getProduct(1);
-//     for(Product p:products) {
-//   System.out.println(p.getId()+" "+p.getProductname()+" "+p.getProductDesc()+" "+p.getQuantity()+" "+p.getPrice());
-//  }
-     productService.addProduct(product);
+//     product.setProductname("L.G");
+//     product.setProductdesc("SPEAKERS");
+//     product.setPrice(4000);
+//     product.setQuantity(10);
+//     productService.addProduct(product);
+////	     productService.deleteProduct(5);
+////   productService.updateProduct(product);
+////    Product p= productService.getProduct(1);
+////     for(Product p:products) {
+////   System.out.println(p.getId()+" "+p.getProductname()+" "+p.getProductDesc()+" "+p.getQuantity()+" "+p.getPrice());
+////  }
+//     productService.addProduct(product);
   }
 }
